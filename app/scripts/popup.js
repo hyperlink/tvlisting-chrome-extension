@@ -82,9 +82,8 @@ function parseURL(url) {
 		params: deparam(a.search),
 		hash: a.hash.replace('#',''),
 		path: a.pathname.replace(/^([^\/])/,'/$1'),
-		// Browserify complains about these two
-		// file_path: (a.pathname.match(/\/([^\/?#]+)$/i) || [,''])[1],
-		// relative_path: (a.href.match(/tps?:\/\/[^\/]+(.+)/) || [,''])[1],
+		file_path: (a.pathname.match(/\/([^\/?#]+)$/i) || [,''])[1],
+		relative_path: (a.href.match(/tps?:\/\/[^\/]+(.+)/) || [,''])[1],
 		segments: a.pathname.replace(/^\//,'').split('/')
 	};
 }

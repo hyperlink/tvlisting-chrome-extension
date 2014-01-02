@@ -13,8 +13,13 @@ Add your zip code into the options page and click the Search button.
 Click on the browser action to bring up the list of channels for your viewing area. Start typing to filter the list by channel name.
 
 ## Development
+Install Grunt and Bower first if you do not have them installed
 
-Checkout code.
+	npm install -g grunt-cli
+	npm install -g bower
+
+
+Checkout code and then run
 
 	cd tvlistings
 	npm install
